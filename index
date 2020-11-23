@@ -1,0 +1,32 @@
+name = input('Please type in your name and press ENTER ')
+print(f'Hello {name} and welcome to David Cruz\'s program! ')
+color = input('What is your favorite color? ')
+print(f'Wow! {color} is my favorite color as well!')
+age = input('Please enter your birth year and press ENTER ')
+agee = int(2020) - int(age)
+print(f'You are currently {agee} years old! ')
+print('I can convert your weight from Kilograms to Pounds or vice versa')
+
+w = int((input('Please enter your weight: ')))
+unit = (input('Type K(g) or L(bs)?: '))
+if unit.upper() == 'L':
+    print(w * 0.45)
+elif unit.upper() == 'K':
+    print(w * 2.2)
+else:
+    print('invalid unit selected')
+print('Would you like to play a game? ')
+print("I'm thinking of a number between 1-10")
+print('You have 3 tries to guess my number')
+secret_number = 7
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input('Guess?: '))
+    guess_count += 1
+    if guess == secret_number:
+        print('Great guess! You have won this game')
+        break
+else:
+    print('Sorry, you could not guess correctly. :( ')
+print('Thank you for using this program and have a good day')
